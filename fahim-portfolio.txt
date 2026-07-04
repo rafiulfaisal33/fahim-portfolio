@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullah Al Fahim | Digital Marketer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+<style>
+body {
+font-family: 'Inter', system-ui, sans-serif;
+/* Colorful Gradient Background */
+background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+min-height: 100vh;
+}
+html { scroll-behavior: smooth; }
+
+/* Glassmorphism effect for cards */
+.glass-card {
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+transition: all 0.4s ease;
+}
+.glass-card:hover {
+background: rgba(255, 255, 255, 0.15);
+transform: translateY(-8px);
+border: 1px solid rgba(255, 255, 255, 0.4);
+box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Glowing text */
+.gradient-text {
+background: linear-gradient(to right, #ff7e5f, #feb47b, #86e3ce, #d4fc79);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.lightbox-bg { backdrop-filter: blur(16px); background: rgba(0,0,0,0.8); }
+</style>
+</head>
+<body class="text-white antialiased overflow-x-hidden">
+
+<!-- Navbar -->
+<nav class="fixed top-0 w-full z-50 glass-card border-t-0 border-l-0 border-r-0 rounded-none">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="font-extrabold text-2xl tracking-tighter gradient-text">FAHIM.</a>
+<div class="flex gap-6 text-sm font-medium text-gray-300">
+<a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+<a href="#contact" class="hover:text-white transition">Contact</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center px-6 text-center">
+<div data-aos="zoom-in">
+<p class="text-sm uppercase tracking-[0.3em] text-gray-400 mb-6">Digital Marketer & Growth Strategist</p>
+<h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter mb-6 gradient-text leading-tight">
+Abdullah Al Fahim
+</h1>
+<p class="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+I help brands scale revenue through data-driven campaigns. Specializing in ROI-focused Facebook Ads, SEO, and Performance Marketing.
+</p>
+<a href="#portfolio" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all hover:gap-4">
+View My Work <iconify-icon icon="lucide:arrow-down"></iconify-icon>
+</a>
+</div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-16" data-aos="fade-up">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight gradient-text">Brands I've Scaled</h2>
+<p class="text-gray-400 mt-4 text-lg">Real data. Real results. Click to inspect.</p>
+</div>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<!-- ========================================== -->
+<!-- EDIT YOUR BRAND DATA HERE (Copy-Paste this block to add a new brand) -->
+<!-- ========================================== -->
+<div class="glass-card rounded-2xl p-8" data-aos="fade-up" data-aos-delay="100">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-4">
+<!-- Brand Logo/Initial -->
+<div class="w-14 h-14 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-white font-bold text-xl shadow-lg">D</div>
+<h3 class="text-2xl font-bold text-white">Daraz BD</h3>
+</div>
+<div class="flex gap-3">
+<a href="https://daraz.com.bd" target="_blank" class="text-gray-400 hover:text-white transition text-sm border border-gray-600 px-3 py-1 rounded-full hover:border-white">Website</a>
+<a href="https://facebook.com/darazbd" target="_blank" class="text-gray-400 hover:text-white transition text-sm border border-gray-600 px-3 py-1 rounded-full hover:border-white">Facebook</a>
+</div>
+</div>
+<div class="bg-white/5 p-5 rounded-xl border border-white/10">
+<div class="flex justify-between items-center mb-4">
+<h4 class="font-semibold text-gray-200">11.11 Mega Campaign</h4>
+<span class="text-sm font-mono font-bold text-orange-400 bg-orange-400/10 px-2 py-1 rounded">10x ROAS</span>
+</div>
+<p class="text-sm text-gray-400 mb-4">Lead generation & conversion campaign targeting tier-2 cities.</p>
+<div class="flex gap-3 cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80')">
+<!-- Replace these image links with your Screenshot links -->
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=200&h=120&q=80" class="w-1/2 h-24 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Screenshot 1">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=200&h=120&q=80" class="w-1/2 h-24 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Screenshot 2">
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- BRAND BLOCK ENDS HERE -->
+<!-- ========================================== -->
+
+<!-- Brand 2: bKash -->
+<div class="glass-card rounded-2xl p-8" data-aos="fade-up" data-aos-delay="200">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl shadow-lg">b</div>
+<h3 class="text-2xl font-bold text-white">bKash</h3>
+</div>
+<div class="flex gap-3">
+<a href="https://bkash.com" target="_blank" class="text-gray-400 hover:text-white transition text-sm border border-gray-600 px-3 py-1 rounded-full hover:border-white">Website</a>
+<a href="https://facebook.com/bkash" target="_blank" class="text-gray-400 hover:text-white transition text-sm border border-gray-600 px-3 py-1 rounded-full hover:border-white">Facebook</a>
+</div>
+</div>
+<div class="bg-white/5 p-5 rounded-xl border border-white/10">
+<div class="flex justify-between items-center mb-4">
+<h4 class="font-semibold text-gray-200">Cashback Festival</h4>
+<span class="text-sm font-mono font-bold text-pink-400 bg-pink-400/10 px-2 py-1 rounded">2M+ Reach</span>
+</div>
+<p class="text-sm text-gray-400 mb-4">Brand awareness & app install campaign for festive season.</p>
+<div class="flex gap-3 cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80')">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=200&h=120&q=80" class="w-1/2 h-24 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Screenshot 1">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=200&h=120&q=80" class="w-1/2 h-24 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Screenshot 2">
+</div>
+</div>
+</div>
+
+<!-- Brand 3: Grameenphone -->
+<div class="glass-card rounded-2xl p-8" data-aos="fade-up" data-aos-delay="300">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-gradient-to-br from-green-400 to-cyan-500 flex items-center justify-center text-white font-bold text-xl shadow-lg">GP</div>
+<h3 class="text-2xl font-bold text-white">Grameenphone</h3>
+</div>
+<div class="flex gap-3">
+<a href="https://gp.com.bd" target="_blank" class="text-gray-400 hover:text-white transition text-sm border border-gray-600 px-3 py-1 rounded-full hover:border-white">Website</a>
+</div>
+</div>
+<div class="bg-white/5 p-5 rounded-xl border border-white/10">
+<div class="flex justify-between items-center mb-4">
+<h4 class="font-semibold text-gray-200">My Offer Campaign</h4>
+<span class="text-sm font-mono font-bold text-green-400 bg-green-400/10 px-2 py-1 rounded">5L+ Leads</span>
+</div>
+<p class="text-sm text-gray-400 mb-4">Performance marketing for personalized data pack offers.</p>
+<div class="flex gap-3 cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80')">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=200&h=120&q=80" class="w-1/2 h-24 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Screenshot 1">
+</div>
+</div>
+</div>
+
+<!-- Brand 4: Pathao -->
+<div class="glass-card rounded-2xl p-8" data-aos="fade-up" data-aos-delay="400">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white font-bold text-xl shadow-lg">P</div>
+<h3 class="text-2xl font-bold text-white">Pathao</h3>
+</div>
+<div class="flex gap-3">
+<a href="https://pathao.com" target="_blank" class="text-gray-400 hover:text-white transition text-sm border border-gray-600 px-3 py-1 rounded-full hover:border-white">Website</a>
+<a href="https://facebook.com/pathao" target="_blank" class="text-gray-400 hover:text-white transition text-sm border border-gray-600 px-3 py-1 rounded-full hover:border-white">Facebook</a>
+</div>
+</div>
+<div class="bg-white/5 p-5 rounded-xl border border-white/10">
+<div class="flex justify-between items-center mb-4">
+<h4 class="font-semibold text-gray-200">Ride & Win Campaign</h4>
+<span class="text-sm font-mono font-bold text-orange-400 bg-orange-400/10 px-2 py-1 rounded">3x Conversion</span>
+</div>
+<p class="text-sm text-gray-400 mb-4">User acquisition & retention campaign for festive rush.</p>
+<div class="flex gap-3 cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80')">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=200&h=120&q=80" class="w-1/2 h-24 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300" alt="Screenshot 1">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-24">
+<div class="max-w-4xl mx-auto px-6 text-center glass-card rounded-3xl p-16" data-aos="zoom-in-up">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 gradient-text">Ready to Scale Your Brand?</h2>
+<p class="text-gray-300 text-lg mb-10">Let's discuss how data-driven marketing can accelerate your growth.</p>
+<a href="mailto:fahim@example.com" class="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-10 py-5 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all text-lg">
+<iconify-icon icon="lucide:mail"></iconify-icon> Get In Touch
+</a>
+</div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 z-[100] lightbox-bg hidden items-center justify-center p-6 cursor-pointer" onclick="closeLightbox()">
+<img id="lightbox-img" src="" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl transform scale-90 transition-transform duration-500" alt="Full Screenshot">
+</div>
+
+<script>
+AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true });
+
+function openLightbox(imageSrc) {
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+lightboxImg.src = imageSrc;
+lightbox.classList.remove('hidden');
+lightbox.classList.add('flex');
+setTimeout(() => { lightboxImg.classList.remove('scale-90'); lightboxImg.classList.add('scale-100'); }, 50);
+}
+
+function closeLightbox() {
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+lightboxImg.classList.remove('scale-100');
+lightboxImg.classList.add('scale-90');
+setTimeout(() => { lightbox.classList.add('hidden'); lightbox.classList.remove('flex'); }, 500);
+}
+</script>
+</body>
+</html>
